@@ -5,6 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import GlobalStyle from "./styles/GlobalStyle";
 import Theme from "./styles/Theme";
 import { ThemeProvider } from "styled-components";
+import store from "./redux/config/configStore";
+import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -13,7 +15,9 @@ root.render(
   <>
     <GlobalStyle />
     <ThemeProvider theme={Theme}>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </ThemeProvider>
   </>,
 );

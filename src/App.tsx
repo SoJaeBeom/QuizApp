@@ -1,7 +1,8 @@
 import React from "react";
+import Router from "./router/router";
 
 function App() {
-  return <div className="App">App 입니다.</div>;
+  return <Router />;
 }
 
 export default App;
