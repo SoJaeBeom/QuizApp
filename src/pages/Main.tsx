@@ -113,21 +113,21 @@ const MainLayout = styled.div`
   margin: auto;
 `;
 const MainWrapper = styled.div`
-  width: 1360px;
+  width: 85rem;
   margin: auto;
 `;
 
 const MainBox = styled.div`
-  width: 1280px;
+  width: 80rem;
   margin: auto;
 
   h1 {
-    margin-top: 60px;
-    margin-bottom: 125px;
+    margin-top: 3.75rem;
+    margin-bottom: 6.25rem;
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 3.12rem;
+    line-height: 2.5rem;
     color: #000000;
     text-align: center;
   }
@@ -136,23 +136,33 @@ const SelectWrapper = styled.div`
   display: flex;
 `;
 const SelectSection = styled.div`
-  width: 401px;
-  height: 492px;
+  width: 25rem;
+  height: 30.75rem;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 125px;
-  margin-right: 39px;
-  border: 2px solid black;
+  margin-bottom: 6.25rem;
+  margin-right: 2.5rem;
+  border: 1px solid black;
 `;
 
 const Button = styled.button`
-  width: 1280px;
-  height: 120px;
+  width: 80rem;
+  height: 7.5rem;
+  background-color: transparent;
+  border: 1px solid black;
+  box-shadow: 0 5px 5px grey;
+  border-radius: 9px;
+
+  &:hover {
+    border: 1px solid black;
+    box-shadow: 0 15px 15px grey;
+  }
+
   span {
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 3.12rem;
+    line-height: 2.5rem;
     color: #000000;
   }
 `;
