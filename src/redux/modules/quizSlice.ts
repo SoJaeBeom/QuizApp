@@ -4,7 +4,12 @@ import { IQuizInitialState, ISelectSetting } from "../../types/SelectorTypes";
 
 const initialState: IQuizInitialState = {
   quizList: [],
-  isLoading: false,
+  quizItem: {
+    id: 0,
+    question: "",
+    correct_answer: "",
+    answers: [],
+  },
   isFinish: false,
 };
 
@@ -24,14 +29,42 @@ export const __getQuizList = createAsyncThunk(
 export const quizSlice = createSlice({
   name: "quizSlice",
   initialState,
-  reducers: {},
+  reducers: {
+    getQuizItem: (state, action) => {
+      state.quizItem = {
+        id: action.payload,
+        question: state.quizList[action.payload].question,
+        answers: [
+          ...state.quizList[action.payload].incorrect_answers,
+          state.quizList[action.payload].correct_answer,
+        ].sort(() => Math.random() - 0.5),
+        correct_answer: state.quizList[action.payload].correct_answer,
+      };
+    },
+
+    checkQuizAnswer: (state, action) => {
+      state.quizAnswer = [...state.quizAnswer, action.payload];
+    },
+
+    reset: state => {
+      state.quizAnswer = [];
+    },
+  },
   extraReducers: {
     [__getQuizList.pending.type]: state => {
-      state.isLoading = true;
+      state.isFinish = false;
     },
     [__getQuizList.fulfilled.type]: (state, action) => {
       state.quizList = action.payload;
-      state.isLoading = false;
+      state.quizItem = {
+        id: 0,
+        question: action.payload[0].question,
+        correct_answer: action.payload[0].correct_answer,
+        answers: [
+          ...action.payload[0].incorrect_answers,
+          action.payload[0].correct_answer,
+        ].sort(() => Math.random() - 0.5),
+      };
       state.isFinish = true;
     },
     [__getQuizList.rejected.type]: state => {
@@ -39,5 +72,7 @@ export const quizSlice = createSlice({
     },
   },
 });
+
+export const { getQuizItem, checkQuizAnswer, reset } = quizSlice.actions;
 
 export default quizSlice.reducer;

@@ -29,7 +29,7 @@ export interface ISelectSetting {
   amount: string;
 }
 
-export interface IQuiz {
+export interface IQuizList {
   category: string;
   correct_answer: string;
   difficulty: string;
@@ -38,8 +38,23 @@ export interface IQuiz {
   type: string;
 }
 
+export interface IQuizItem {
+  id: number;
+  question: string;
+  answers: string[];
+  correct_answer: string;
+}
+
+export interface IQuizAnswer {
+  id: number;
+  status: boolean;
+  myChoice: string;
+  orginAnswer: string;
+  answerList: string[];
+}
+
 export interface IQuizInitialState {
-  quizList: IQuiz[];
-  isLoading: boolean;
+  quizList: IQuizList[];
+  quizItem: IQuizItem;
   isFinish: boolean;
 }
