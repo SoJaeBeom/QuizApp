@@ -10,6 +10,7 @@ const initialState: IQuizInitialState = {
     correct_answer: "",
     answers: [],
   },
+  quizAnswer: [],
   isFinish: false,
 };
 

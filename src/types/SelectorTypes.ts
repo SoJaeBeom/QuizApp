@@ -56,5 +56,6 @@ export interface IQuizAnswer {
 export interface IQuizInitialState {
   quizList: IQuizList[];
   quizItem: IQuizItem;
+  quizAnswer: IQuizAnswer[];
   isFinish: boolean;
 }
