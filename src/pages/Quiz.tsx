@@ -1,6 +1,7 @@
 import { MouseEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import Loading from "../components/Loading";
 import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
 import {
   checkQuizAnswer,
@@ -140,7 +141,7 @@ const Quiz = () => {
       </QuizLayout>
     );
   } else {
-    return <div>로딩중</div>;
+    return <Loading />;
   }
 };
 
