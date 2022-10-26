@@ -96,12 +96,12 @@ const WrongAnswerNoteLayout = styled.div`
 `;
 
 const WrongAnswerNoteWrapper = styled.div`
-  width: 85rem;
+  width: 70vw;
   margin: auto;
 `;
 
 const WrongAnswerNoteBox = styled.div`
-  width: 80rem;
+  width: 66vw;
   margin: auto;
 `;
 
@@ -110,65 +110,65 @@ const Header = styled.div`
   justify-content: space-between;
 
   span {
-    margin-top: 3.75rem;
+    margin-top: 6vh;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.12rem;
-    line-height: 2.5rem;
+    font-size: 3vw;
+    line-height: 4vh;
 
     color: #000000;
   }
 
   img {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1vw;
+    height: 2vh;
     cursor: pointer;
   }
 `;
 
 const WrongAnswerCardList = styled.div`
   display: flex;
-  width: 80rem;
-  height: 25rem;
-  margin-top: 4rem;
+  width: 66vw;
+  height: 41vh;
+  margin-top: 7vh;
 
   &:last-child {
-    margin-bottom: 4rem;
+    margin-bottom: 7vh;
   }
 `;
 
 const Question = styled.div`
-  width: 50rem;
+  width: 42vw;
   display: flex;
   align-items: center;
   border: 1px solid black;
   box-shadow: 0 5px 5px grey;
   border-radius: 9px;
-  margin-right: 5rem;
-  padding: 1.25rem;
+  margin-right: 4vw;
+  padding: 20px;
 
   p {
     font-style: normal;
     font-weight: 400;
-    font-size: 1.87rem;
-    line-height: 2.5rem;
+    font-size: 2vw;
+    line-height: 4vh;
 
     color: #000000;
   }
 `;
 
 const Answer = styled.div`
-  width: 25rem;
+  width: 21vw;
   border: 1px solid black;
   box-shadow: 0 5px 5px grey;
   border-radius: 9px;
 
   p {
-    margin-left: 1.25rem;
+    margin-left: 1vw;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 2.5rem;
+    font-size: 1vw;
+    line-height: 4vh;
 
     color: #000000;
   }
@@ -178,11 +178,11 @@ const MyAnswer = styled.div`
   border-bottom: 1px solid black;
 
   p {
-    margin-left: 1.25rem;
+    margin-left: 1vw;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 2.5rem;
+    font-size: 1vw;
+    line-height: 4vh;
 
     color: #000000;
   }

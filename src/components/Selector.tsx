@@ -70,7 +70,7 @@ export default Selector;
 
 const SelectBox = styled.div`
   position: relative;
-  width: 500px;
+  width: 100%;
   height: 100%;
   padding: 10px;
 
@@ -81,22 +81,22 @@ const SelectBox = styled.div`
   &::before {
     content: "⌵";
     position: absolute;
-    top: 0px;
-    right: 8px;
-    font-size: 30px;
+    top: 0;
+    right: 0.5vw;
+    font-size: 1.5vw;
   }
 `;
 
 const Label = styled.label`
-  font-size: 30px;
-  margin-right: 20px;
+  font-size: 1.5vw;
+  margin-right: 1vw;
   text-align: center;
 `;
 
 const SelectOptions = styled.ul`
   position: absolute;
   list-style: none;
-  top: 40px;
+  top: 4vh;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -107,7 +107,7 @@ const SelectOptions = styled.ul`
 `;
 
 const Option = styled.li`
-  font-size: 20px;
+  font-size: 1vw;
   padding: 6px 8px;
   border: 1px solid;
   text-align: center;

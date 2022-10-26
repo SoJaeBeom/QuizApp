@@ -76,14 +76,15 @@ const QuizResult = () => {
             </span>
           </Header>
           <QuizResultInfo>
-            <div>
+            <Chart>
               <ReactApexChart
                 options={options}
                 series={options.series}
                 type="donut"
-                width="500"
+                width="100%"
+                height="100%"
               />
-            </div>
+            </Chart>
             <Info>
               <div>
                 <p>걸린시간</p>
@@ -122,12 +123,12 @@ const QuizResultLayout = styled.div`
   margin: auto;
 `;
 const QuizResultWrapper = styled.div`
-  width: 85rem;
+  width: 70vw;
   margin: auto;
 `;
 
 const QuizResultBox = styled.div`
-  width: 80rem;
+  width: 66vw;
   margin: auto;
 `;
 
@@ -136,27 +137,27 @@ const Header = styled.div`
   justify-content: space-between;
 
   span {
-    margin-top: 3.75rem;
+    margin-top: 6vh;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.12rem;
-    line-height: 2.5rem;
+    font-size: 3vw;
+    line-height: 4vh;
 
     color: #000000;
   }
 
   img {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1vw;
+    height: 2vh;
     cursor: pointer;
   }
 `;
 
 const QuizResultInfo = styled.div`
   display: flex;
-  width: 80rem;
-  height: 25rem;
-  margin-top: 4rem;
+  width: 66vw;
+  height: 41vh;
+  margin-top: 7vh;
   background-color: #ffffff;
   padding: 5px;
   border: 1px solid black;
@@ -164,9 +165,16 @@ const QuizResultInfo = styled.div`
   border-radius: 9px;
 `;
 
+const Chart = styled.div`
+  width: 26vw;
+  margin-top: 3vh;
+`;
+
 const Info = styled.div`
-  width: 31.25rem;
-  margin-left: 9.37rem;
+  width: 26vw;
+  margin-top: 3vh;
+  margin-left: 8vw;
+  margin-right: 5vw;
 
   div {
     display: flex;
@@ -174,37 +182,37 @@ const Info = styled.div`
   }
 
   p {
-    margin-top: 3.12rem;
+    margin-top: 5vh;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 2vw;
+    line-height: 4vh;
 
     color: #000000;
   }
 
   span {
-    margin-left: 1.25rem;
+    margin-left: 1vw;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.87rem;
-    line-height: 2.5rem;
+    font-size: 2vw;
+    line-height: 4vh;
 
     color: #000000;
   }
 `;
 const Button = styled.button`
-  width: 37rem;
-  height: 12rem;
-  margin-top: 6.4rem;
-  margin-right: 5.6rem;
+  width: 30.5vw;
+  height: 20vh;
+  margin-top: 10vh;
+  margin-right: 5vw;
   border: 1px solid black;
   box-shadow: 0 5px 5px grey;
   border-radius: 9px;
   background-color: transparent;
 
   &:nth-child(2n) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   &:hover {
@@ -215,8 +223,8 @@ const Button = styled.button`
   span {
     font-style: normal;
     font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 2vw;
+    line-height: 4vh;
 
     color: #000000;
   }

@@ -28,29 +28,29 @@ const ErrorPageLayout = styled.div`
   margin: auto;
 `;
 const ErrorPageWrapper = styled.div`
-  width: 85rem;
+  width: 70vw;
   margin: auto;
 `;
 
 const ErrorPageBox = styled.div`
-  width: 80rem;
+  width: 66vw;
   margin: auto;
   text-align: center;
 
   h1 {
-    margin-top: 3.75rem;
-    margin-bottom: 6.25rem;
+    margin-top: 6vh;
+    margin-bottom: 10vh;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.12rem;
-    line-height: 2.5rem;
+    font-size: 3vw;
+    line-height: 4vh;
     color: #000000;
   }
 `;
 
 const Button = styled.button`
-  width: 50rem;
-  height: 7.5rem;
+  width: 42vw;
+  height: 12vh;
   background-color: transparent;
   border: 1px solid black;
   box-shadow: 0 5px 5px grey;
@@ -64,8 +64,8 @@ const Button = styled.button`
   span {
     font-style: normal;
     font-weight: 400;
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2vw;
+    line-height: 4vh;
     color: #000000;
   }
 `;

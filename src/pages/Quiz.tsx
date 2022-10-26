@@ -151,12 +151,12 @@ const QuizLayout = styled.div`
   margin: auto;
 `;
 const QuizWrapper = styled.div`
-  width: 85rem;
+  width: 70vw;
   margin: auto;
 `;
 
 const QuizBox = styled.div`
-  width: 80rem;
+  width: 66vw;
   margin: auto;
 `;
 
@@ -165,18 +165,18 @@ const Header = styled.div`
   justify-content: space-between;
 
   span {
-    margin-top: 3.75rem;
+    margin-top: 6vh;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.12rem;
-    line-height: 2.5rem;
+    font-size: 3vw;
+    line-height: 4vh;
 
     color: #000000;
   }
 
   img {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1vw;
+    height: 2vh;
     cursor: pointer;
   }
 `;
@@ -184,43 +184,43 @@ const Header = styled.div`
 const Question = styled.div`
   display: flex;
   align-items: center;
-  width: 80rem;
-  height: 8.75rem;
-  margin-top: 4rem;
+  width: 66vw;
+  height: 14vh;
+  margin-top: 7vh;
 
   border: 1px solid black;
   box-shadow: 0 5px 5px grey;
   border-radius: 9px;
 
   h1 {
-    margin-left: 1.25rem;
+    margin-left: 1vw;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.87rem;
-    line-height: 2.5rem;
+    font-size: 2vw;
+    line-height: 4vh;
     color: #000000;
   }
 `;
 
 const Answers = styled.div`
   display: flex;
-  margin-top: 5.93rem;
+  margin-top: 10vh;
 `;
 
 const Answer = styled.div`
   display: grid;
   align-items: center;
   text-align: center;
-  width: 18.75rem;
-  height: 29rem;
-  margin-right: 1.56rem;
+  width: 16vw;
+  height: 48vh;
+  margin-right: 1vw;
   border: 1px solid black;
   box-shadow: 0 5px 5px grey;
   border-radius: 9px;
   cursor: pointer;
 
   &:nth-child(4n) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   &:hover {
@@ -231,8 +231,8 @@ const Answer = styled.div`
   span {
     font-style: normal;
     font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 2.5rem;
+    font-size: 1vw;
+    line-height: 4vh;
 
     color: #000000;
   }
@@ -241,25 +241,25 @@ const Answer = styled.div`
 const SelectAnswer = styled.div`
   display: grid;
   align-items: center;
-  width: 18.75rem;
-  height: 29rem;
+  width: 16vw;
+  height: 48vh;
   border: 2px solid
     ${props => (props.className === "correct" ? "#bffbe2" : "pink")};
   box-shadow: 0 15px 15px grey;
   border-radius: 9px;
-  margin-right: 1.56rem;
-  bottom: ${props => (props.className === "correct" ? "30px" : "0px")};
+  margin-right: 1vw;
+  bottom: ${props => (props.className === "correct" ? "3vh" : "0")};
   text-align: center;
 
   &:nth-child(4n) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   span {
     font-style: normal;
     font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 2.5rem;
+    font-size: 1vw;
+    line-height: 4vh;
 
     color: #000000;
   }
@@ -267,10 +267,10 @@ const SelectAnswer = styled.div`
 
 const Button = styled.button`
   position: fixed;
-  right: 0.62rem;
-  bottom: 0.9rem;
-  width: 18.75rem;
-  height: 5rem;
+  right: 0.5vw;
+  bottom: 1vh;
+  width: 16vw;
+  height: 8vh;
   background-color: transparent;
   border: 1px solid black;
   box-shadow: 0 5px 5px grey;
